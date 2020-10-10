@@ -7,25 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418B36A2531CBD90060DD1E /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3692531CBD90060DD1E /* AppServices.swift */; };
+		0418B36D2531CC7D0060DD1E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B36C2531CC7D0060DD1E /* SettingsViewModel.swift */; };
+		0418B3712531CFAF0060DD1E /* DayInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3702531CFAF0060DD1E /* DayInfoView.swift */; };
+		0418B3742531CFF00060DD1E /* DayInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3732531CFF00060DD1E /* DayInfoHeaderView.swift */; };
+		0418B3772531D2980060DD1E /* DayInfoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3762531D2980060DD1E /* DayInfoContentView.swift */; };
+		0418B37A2531DB1A0060DD1E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3792531DB1A0060DD1E /* CoreDataStack.swift */; };
+		0418B37E2531DC9A0060DD1E /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B37C2531DC9A0060DD1E /* Day+CoreDataClass.swift */; };
+		0418B37F2531DC9A0060DD1E /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B37D2531DC9A0060DD1E /* Day+CoreDataProperties.swift */; };
+		04CDE26F25309893002A99C0 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE26E25309893002A99C0 /* DayCollectionViewCell.swift */; };
+		04CDE272253098F1002A99C0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE271253098F1002A99C0 /* Reusable.swift */; };
+		04CDE27A25309F7D002A99C0 /* DayCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE27925309F7D002A99C0 /* DayCellModel.swift */; };
+		04CDE27E2530A530002A99C0 /* BottomBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE27D2530A530002A99C0 /* BottomBorderedView.swift */; };
+		04CDE2832530AD69002A99C0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE2822530AD69002A99C0 /* SettingsViewController.swift */; };
+		04CDE2872530B08D002A99C0 /* SettingsViewController+TableViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE2862530B08D002A99C0 /* SettingsViewController+TableViewForm.swift */; };
+		04CDE28E2530B49D002A99C0 /* SwitchFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE28D2530B49D002A99C0 /* SwitchFormCell.swift */; };
+		04CDE2912530B525002A99C0 /* CircleSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE2902530B525002A99C0 /* CircleSwitchButton.swift */; };
+		04DAC0A12530912D0069684C /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0A02530912D0069684C /* GoalViewController.swift */; };
+		04DAC0A4253092EF0069684C /* UIColor+customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0A3253092EF0069684C /* UIColor+customColors.swift */; };
+		04DAC0A72530942D0069684C /* UIView+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0A62530942D0069684C /* UIView+constraints.swift */; };
+		04DAC0AE253096270069684C /* UIFont+Avenir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0AD253096270069684C /* UIFont+Avenir.swift */; };
+		04DAC0B1253097CD0069684C /* DaySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0B0253097CD0069684C /* DaySelectorView.swift */; };
 		04DCFD772530909E00DF091B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCFD762530909E00DF091B /* AppDelegate.swift */; };
 		04DCFD792530909E00DF091B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCFD782530909E00DF091B /* SceneDelegate.swift */; };
-		04DCFD7B2530909E00DF091B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCFD7A2530909E00DF091B /* ViewController.swift */; };
-		04DCFD7E2530909E00DF091B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DCFD7C2530909E00DF091B /* Main.storyboard */; };
 		04DCFD812530909E00DF091B /* GoalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04DCFD7F2530909E00DF091B /* GoalApp.xcdatamodeld */; };
 		04DCFD83253090A200DF091B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DCFD82253090A200DF091B /* Assets.xcassets */; };
 		04DCFD86253090A200DF091B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DCFD84253090A200DF091B /* LaunchScreen.storyboard */; };
+		04E07DF12531BC4900D69FA0 /* SubmitButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E07DF02531BC4900D69FA0 /* SubmitButtonTableViewCell.swift */; };
+		04E07DF42531BE5700D69FA0 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E07DF32531BE5700D69FA0 /* UserSettings.swift */; };
+		04FFAEAB2531B02C00DCBB56 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEAA2531B02C00DCBB56 /* TextViewTableViewCell.swift */; };
+		04FFAEAE2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */; };
+		04FFAEB12531B40F00DCBB56 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEB02531B40F00DCBB56 /* DateTableViewCell.swift */; };
+		04FFAEB52531B5E000DCBB56 /* DateFormatter+dateFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEB42531B5E000DCBB56 /* DateFormatter+dateFormats.swift */; };
+		04FFAEB82531B6FF00DCBB56 /* BigDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEB72531B6FF00DCBB56 /* BigDatePickerView.swift */; };
+		04FFAEBB2531B70900DCBB56 /* DatePickerLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEBA2531B70900DCBB56 /* DatePickerLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0418B3692531CBD90060DD1E /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		0418B36C2531CC7D0060DD1E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		0418B3702531CFAF0060DD1E /* DayInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoView.swift; sourceTree = "<group>"; };
+		0418B3732531CFF00060DD1E /* DayInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoHeaderView.swift; sourceTree = "<group>"; };
+		0418B3762531D2980060DD1E /* DayInfoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoContentView.swift; sourceTree = "<group>"; };
+		0418B3792531DB1A0060DD1E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0418B37C2531DC9A0060DD1E /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0418B37D2531DC9A0060DD1E /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04CDE26E25309893002A99C0 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		04CDE271253098F1002A99C0 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		04CDE27925309F7D002A99C0 /* DayCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellModel.swift; sourceTree = "<group>"; };
+		04CDE27D2530A530002A99C0 /* BottomBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBorderedView.swift; sourceTree = "<group>"; };
+		04CDE2822530AD69002A99C0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		04CDE2862530B08D002A99C0 /* SettingsViewController+TableViewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableViewForm.swift"; sourceTree = "<group>"; };
+		04CDE28D2530B49D002A99C0 /* SwitchFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchFormCell.swift; sourceTree = "<group>"; };
+		04CDE2902530B525002A99C0 /* CircleSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSwitchButton.swift; sourceTree = "<group>"; };
+		04DAC0A02530912D0069684C /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		04DAC0A3253092EF0069684C /* UIColor+customColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+customColors.swift"; sourceTree = "<group>"; };
+		04DAC0A62530942D0069684C /* UIView+constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+constraints.swift"; sourceTree = "<group>"; };
+		04DAC0AD253096270069684C /* UIFont+Avenir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Avenir.swift"; sourceTree = "<group>"; };
+		04DAC0B0253097CD0069684C /* DaySelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectorView.swift; sourceTree = "<group>"; };
 		04DCFD732530909E00DF091B /* GoalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DCFD762530909E00DF091B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04DCFD782530909E00DF091B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04DCFD7A2530909E00DF091B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04DCFD7D2530909E00DF091B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04DCFD802530909E00DF091B /* GoalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalApp.xcdatamodel; sourceTree = "<group>"; };
 		04DCFD82253090A200DF091B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DCFD85253090A200DF091B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04DCFD87253090A200DF091B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E07DF02531BC4900D69FA0 /* SubmitButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonTableViewCell.swift; sourceTree = "<group>"; };
+		04E07DF32531BE5700D69FA0 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		04FFAEAA2531B02C00DCBB56 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeyboardOnTap.swift"; sourceTree = "<group>"; };
+		04FFAEB02531B40F00DCBB56 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		04FFAEB42531B5E000DCBB56 /* DateFormatter+dateFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+dateFormats.swift"; sourceTree = "<group>"; };
+		04FFAEB72531B6FF00DCBB56 /* BigDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigDatePickerView.swift; sourceTree = "<group>"; };
+		04FFAEBA2531B70900DCBB56 /* DatePickerLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +93,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418B36F2531CF960060DD1E /* DayInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				0418B3702531CFAF0060DD1E /* DayInfoView.swift */,
+				0418B3732531CFF00060DD1E /* DayInfoHeaderView.swift */,
+				0418B3762531D2980060DD1E /* DayInfoContentView.swift */,
+			);
+			path = DayInfoView;
+			sourceTree = "<group>";
+		};
+		04CDE27425309F20002A99C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04CDE2812530AAC3002A99C0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				04CDE2822530AD69002A99C0 /* SettingsViewController.swift */,
+				04CDE2862530B08D002A99C0 /* SettingsViewController+TableViewForm.swift */,
+				0418B36C2531CC7D0060DD1E /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		04CDE28C2530B486002A99C0 /* SettingsFromCells */ = {
+			isa = PBXGroup;
+			children = (
+				04CDE28D2530B49D002A99C0 /* SwitchFormCell.swift */,
+				04FFAEAA2531B02C00DCBB56 /* TextViewTableViewCell.swift */,
+				04FFAEB02531B40F00DCBB56 /* DateTableViewCell.swift */,
+				04E07DF02531BC4900D69FA0 /* SubmitButtonTableViewCell.swift */,
+			);
+			path = SettingsFromCells;
+			sourceTree = "<group>";
+		};
+		04DAC09F253091210069684C /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0A02530912D0069684C /* GoalViewController.swift */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		04DAC0B32530982E0069684C /* DaySelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0B0253097CD0069684C /* DaySelectorView.swift */,
+				04CDE26E25309893002A99C0 /* DayCollectionViewCell.swift */,
+				04CDE27925309F7D002A99C0 /* DayCellModel.swift */,
+			);
+			path = DaySelectorView;
+			sourceTree = "<group>";
+		};
 		04DCFD6A2530909E00DF091B = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +168,107 @@
 		04DCFD752530909E00DF091B /* GoalApp */ = {
 			isa = PBXGroup;
 			children = (
-				04DCFD762530909E00DF091B /* AppDelegate.swift */,
-				04DCFD782530909E00DF091B /* SceneDelegate.swift */,
-				04DCFD7A2530909E00DF091B /* ViewController.swift */,
-				04DCFD7C2530909E00DF091B /* Main.storyboard */,
-				04DCFD82253090A200DF091B /* Assets.xcassets */,
+				04CDE27425309F20002A99C0 /* Models */,
+				04DCFD96253090D800DF091B /* Extensions */,
+				04DCFD95253090D400DF091B /* Views */,
+				04DCFD94253090CF00DF091B /* Utils */,
+				04DCFD93253090CA00DF091B /* Entities */,
+				04DCFD92253090C200DF091B /* Core Data Model */,
+				04DCFD91253090BB00DF091B /* Supporting Files */,
+				04DCFD90253090B700DF091B /* Services */,
+				04DCFD8F253090B100DF091B /* Screens */,
+				04DCFD8D253090A900DF091B /* Resources */,
 				04DCFD84253090A200DF091B /* LaunchScreen.storyboard */,
 				04DCFD87253090A200DF091B /* Info.plist */,
-				04DCFD7F2530909E00DF091B /* GoalApp.xcdatamodeld */,
 			);
 			path = GoalApp;
+			sourceTree = "<group>";
+		};
+		04DCFD8D253090A900DF091B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04DCFD82253090A200DF091B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04DCFD8F253090B100DF091B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				04CDE2812530AAC3002A99C0 /* Settings */,
+				04DAC09F253091210069684C /* Goal */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		04DCFD90253090B700DF091B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04E07DF32531BE5700D69FA0 /* UserSettings.swift */,
+				0418B3692531CBD90060DD1E /* AppServices.swift */,
+				0418B3792531DB1A0060DD1E /* CoreDataStack.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04DCFD91253090BB00DF091B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04DCFD762530909E00DF091B /* AppDelegate.swift */,
+				04DCFD782530909E00DF091B /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DCFD92253090C200DF091B /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DCFD7F2530909E00DF091B /* GoalApp.xcdatamodeld */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		04DCFD93253090CA00DF091B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0418B37C2531DC9A0060DD1E /* Day+CoreDataClass.swift */,
+				0418B37D2531DC9A0060DD1E /* Day+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		04DCFD94253090CF00DF091B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04FFAEBA2531B70900DCBB56 /* DatePickerLauncher.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04DCFD95253090D400DF091B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0418B36F2531CF960060DD1E /* DayInfoView */,
+				04FFAEB72531B6FF00DCBB56 /* BigDatePickerView.swift */,
+				04CDE28C2530B486002A99C0 /* SettingsFromCells */,
+				04DAC0B32530982E0069684C /* DaySelectorView */,
+				04CDE27D2530A530002A99C0 /* BottomBorderedView.swift */,
+				04CDE2902530B525002A99C0 /* CircleSwitchButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04DCFD96253090D800DF091B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0A3253092EF0069684C /* UIColor+customColors.swift */,
+				04DAC0A62530942D0069684C /* UIView+constraints.swift */,
+				04DAC0AD253096270069684C /* UIFont+Avenir.swift */,
+				04CDE271253098F1002A99C0 /* Reusable.swift */,
+				04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */,
+				04FFAEB42531B5E000DCBB56 /* DateFormatter+dateFormats.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +330,6 @@
 			files = (
 				04DCFD86253090A200DF091B /* LaunchScreen.storyboard in Resources */,
 				04DCFD83253090A200DF091B /* Assets.xcassets in Resources */,
-				04DCFD7E2530909E00DF091B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,24 +340,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0418B37E2531DC9A0060DD1E /* Day+CoreDataClass.swift in Sources */,
 				04DCFD812530909E00DF091B /* GoalApp.xcdatamodeld in Sources */,
-				04DCFD7B2530909E00DF091B /* ViewController.swift in Sources */,
+				04FFAEB52531B5E000DCBB56 /* DateFormatter+dateFormats.swift in Sources */,
+				04CDE2872530B08D002A99C0 /* SettingsViewController+TableViewForm.swift in Sources */,
+				04CDE26F25309893002A99C0 /* DayCollectionViewCell.swift in Sources */,
+				0418B3742531CFF00060DD1E /* DayInfoHeaderView.swift in Sources */,
+				04CDE2912530B525002A99C0 /* CircleSwitchButton.swift in Sources */,
+				04FFAEAE2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift in Sources */,
+				04DAC0AE253096270069684C /* UIFont+Avenir.swift in Sources */,
+				04FFAEBB2531B70900DCBB56 /* DatePickerLauncher.swift in Sources */,
+				04DAC0B1253097CD0069684C /* DaySelectorView.swift in Sources */,
+				04CDE272253098F1002A99C0 /* Reusable.swift in Sources */,
+				04CDE27A25309F7D002A99C0 /* DayCellModel.swift in Sources */,
+				04FFAEB82531B6FF00DCBB56 /* BigDatePickerView.swift in Sources */,
+				04DAC0A72530942D0069684C /* UIView+constraints.swift in Sources */,
+				04E07DF42531BE5700D69FA0 /* UserSettings.swift in Sources */,
+				0418B37F2531DC9A0060DD1E /* Day+CoreDataProperties.swift in Sources */,
+				0418B37A2531DB1A0060DD1E /* CoreDataStack.swift in Sources */,
+				04DAC0A12530912D0069684C /* GoalViewController.swift in Sources */,
 				04DCFD772530909E00DF091B /* AppDelegate.swift in Sources */,
+				04E07DF12531BC4900D69FA0 /* SubmitButtonTableViewCell.swift in Sources */,
+				0418B36A2531CBD90060DD1E /* AppServices.swift in Sources */,
+				0418B3712531CFAF0060DD1E /* DayInfoView.swift in Sources */,
+				04DAC0A4253092EF0069684C /* UIColor+customColors.swift in Sources */,
+				04CDE28E2530B49D002A99C0 /* SwitchFormCell.swift in Sources */,
+				04CDE2832530AD69002A99C0 /* SettingsViewController.swift in Sources */,
+				0418B3772531D2980060DD1E /* DayInfoContentView.swift in Sources */,
+				0418B36D2531CC7D0060DD1E /* SettingsViewModel.swift in Sources */,
+				04CDE27E2530A530002A99C0 /* BottomBorderedView.swift in Sources */,
 				04DCFD792530909E00DF091B /* SceneDelegate.swift in Sources */,
+				04FFAEAB2531B02C00DCBB56 /* TextViewTableViewCell.swift in Sources */,
+				04FFAEB12531B40F00DCBB56 /* DateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04DCFD7C2530909E00DF091B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04DCFD7D2530909E00DF091B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04DCFD84253090A200DF091B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

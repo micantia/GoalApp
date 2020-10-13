@@ -15,7 +15,7 @@ protocol CoreDataStackProvider {
     var coreData: CoreDataStack { get }
 }
 
-protocol AppServicesProvider: UserSettingsProvider {
+protocol AppServicesProvider: UserSettingsProvider, CoreDataStackProvider {
     
 }
 

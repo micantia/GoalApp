@@ -24,6 +24,34 @@ class DayInfoContentView: UIView {
         return view
     }()
     
+    lazy var placeholderView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isHidden = true
+        return view
+    }()
+    
+    lazy var addNoteButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Add Note", for: .normal)
+        button.setTitleColor(.borderBlue, for: .normal)
+        button.titleLabel?.font = .avenirRegular(of: 14)
+        return button
+    }()
+    
+    lazy var emptyNoteText: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .avenirRegular(of: 14)
+        label.numberOfLines = 0
+        label.text = "Nothing were done this day\n But if im wrong"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    weak var delegate: DayInfoViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
@@ -43,6 +71,37 @@ class DayInfoContentView: UIView {
                                 leftAnchor: dayStateBorder.rightAnchor, constant: 15,
                                 bottomAnchor: bottomAnchor, constant: -20,
                                 rightAnchor: rightAnchor, constant: -15)
+        
+        addSubview(placeholderView)
+        placeholderView.fillSuperview()
+        placeholderView.center()
+        
+        placeholderView.addSubview(emptyNoteText)
+        emptyNoteText.center(X: 0, Y: -50)
+        
+        placeholderView.addSubview(addNoteButton)
+        addNoteButton.centerHorizontaly()
+        addNoteButton.constraintHeight(constant: 40)
+        addNoteButton.topAnchor.constraint(equalTo: emptyNoteText.bottomAnchor, constant: 10).isActive = true
+        addNoteButton.addTarget(self, action: #selector(toAddDayNoteSegue), for: .touchUpInside)
+    }
+    
+    func setup(with model: Day?) {
+        guard let model = model else {
+            hideNeededSubviews(true)
+            return
+        }
+        goalTextView.text = model.note
+    }
+
+    private func hideNeededSubviews(_ shouldHide: Bool) {
+        dayStateBorder.isHidden = shouldHide
+        goalTextView.isHidden = shouldHide
+        placeholderView.isHidden = !shouldHide
+    }
+    
+    @objc private func toAddDayNoteSegue() {
+        delegate?.performSegueToAddDayNote()
     }
    
 }

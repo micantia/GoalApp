@@ -15,6 +15,8 @@
 		0418B37A2531DB1A0060DD1E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3792531DB1A0060DD1E /* CoreDataStack.swift */; };
 		0418B37E2531DC9A0060DD1E /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B37C2531DC9A0060DD1E /* Day+CoreDataClass.swift */; };
 		0418B37F2531DC9A0060DD1E /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B37D2531DC9A0060DD1E /* Day+CoreDataProperties.swift */; };
+		0422F73C25347C2A000A8E96 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F73B25347C2A000A8E96 /* GoalViewModel.swift */; };
+		0422F7402534846B000A8E96 /* AddDayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F73F2534846B000A8E96 /* AddDayNoteViewController.swift */; };
 		04CDE26F25309893002A99C0 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE26E25309893002A99C0 /* DayCollectionViewCell.swift */; };
 		04CDE272253098F1002A99C0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE271253098F1002A99C0 /* Reusable.swift */; };
 		04CDE27A25309F7D002A99C0 /* DayCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDE27925309F7D002A99C0 /* DayCellModel.swift */; };
@@ -52,6 +54,8 @@
 		0418B3792531DB1A0060DD1E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0418B37C2531DC9A0060DD1E /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0418B37D2531DC9A0060DD1E /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0422F73B25347C2A000A8E96 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		0422F73F2534846B000A8E96 /* AddDayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayNoteViewController.swift; sourceTree = "<group>"; };
 		04CDE26E25309893002A99C0 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
 		04CDE271253098F1002A99C0 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		04CDE27925309F7D002A99C0 /* DayCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellModel.swift; sourceTree = "<group>"; };
@@ -103,6 +107,14 @@
 			path = DayInfoView;
 			sourceTree = "<group>";
 		};
+		0422F73E2534845B000A8E96 /* AddDayNote */ = {
+			isa = PBXGroup;
+			children = (
+				0422F73F2534846B000A8E96 /* AddDayNoteViewController.swift */,
+			);
+			path = AddDayNote;
+			sourceTree = "<group>";
+		};
 		04CDE27425309F20002A99C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				04DAC0A02530912D0069684C /* GoalViewController.swift */,
+				0422F73B25347C2A000A8E96 /* GoalViewModel.swift */,
 			);
 			path = Goal;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 		04DCFD8F253090B100DF091B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0422F73E2534845B000A8E96 /* AddDayNote */,
 				04CDE2812530AAC3002A99C0 /* Settings */,
 				04DAC09F253091210069684C /* Goal */,
 			);
@@ -349,11 +363,13 @@
 				04CDE2912530B525002A99C0 /* CircleSwitchButton.swift in Sources */,
 				04FFAEAE2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift in Sources */,
 				04DAC0AE253096270069684C /* UIFont+Avenir.swift in Sources */,
+				0422F7402534846B000A8E96 /* AddDayNoteViewController.swift in Sources */,
 				04FFAEBB2531B70900DCBB56 /* DatePickerLauncher.swift in Sources */,
 				04DAC0B1253097CD0069684C /* DaySelectorView.swift in Sources */,
 				04CDE272253098F1002A99C0 /* Reusable.swift in Sources */,
 				04CDE27A25309F7D002A99C0 /* DayCellModel.swift in Sources */,
 				04FFAEB82531B6FF00DCBB56 /* BigDatePickerView.swift in Sources */,
+				0422F73C25347C2A000A8E96 /* GoalViewModel.swift in Sources */,
 				04DAC0A72530942D0069684C /* UIView+constraints.swift in Sources */,
 				04E07DF42531BE5700D69FA0 /* UserSettings.swift in Sources */,
 				0418B37F2531DC9A0060DD1E /* Day+CoreDataProperties.swift in Sources */,

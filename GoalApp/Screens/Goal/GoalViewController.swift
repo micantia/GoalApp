@@ -51,6 +51,7 @@ class GoalViewController: UIViewController {
         view.backgroundColor = .white
         addSubviews()
         dayInfoView.setup(with: viewModel.currentDay)
+        daySelectorView.setup(dayModels: viewModel.availableDaysNumber, selectedIndex: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,7 +70,6 @@ class GoalViewController: UIViewController {
         titleView.addSubview(daySelectorView)
         daySelectorView.pinToEdges(top: nil, left: 0, bottom: 0, right: 0)
         daySelectorView.constraintHeight(constant: 60)
-        daySelectorView.setup(dayModels: (1...25).map { DayCellModel(dayNumber: $0, isEnabled: true) }, selectedIndex: 0)
         
         view.addSubview(dayInfoView)
         dayInfoView.constraint(topAnchor: titleView.bottomAnchor, constant: 0,

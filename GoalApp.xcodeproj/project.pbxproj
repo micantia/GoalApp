@@ -37,6 +37,7 @@
 		04DCFD86253090A200DF091B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DCFD84253090A200DF091B /* LaunchScreen.storyboard */; };
 		04E07DF12531BC4900D69FA0 /* SubmitButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E07DF02531BC4900D69FA0 /* SubmitButtonTableViewCell.swift */; };
 		04E07DF42531BE5700D69FA0 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E07DF32531BE5700D69FA0 /* UserSettings.swift */; };
+		04F0024E2535FE1A004BEA1A /* Date+dayDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0024D2535FE1A004BEA1A /* Date+dayDifference.swift */; };
 		04FFAEAB2531B02C00DCBB56 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEAA2531B02C00DCBB56 /* TextViewTableViewCell.swift */; };
 		04FFAEAE2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */; };
 		04FFAEB12531B40F00DCBB56 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFAEB02531B40F00DCBB56 /* DateTableViewCell.swift */; };
@@ -78,6 +79,7 @@
 		04DCFD87253090A200DF091B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E07DF02531BC4900D69FA0 /* SubmitButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonTableViewCell.swift; sourceTree = "<group>"; };
 		04E07DF32531BE5700D69FA0 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		04F0024D2535FE1A004BEA1A /* Date+dayDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+dayDifference.swift"; sourceTree = "<group>"; };
 		04FFAEAA2531B02C00DCBB56 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
 		04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeyboardOnTap.swift"; sourceTree = "<group>"; };
 		04FFAEB02531B40F00DCBB56 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				04CDE271253098F1002A99C0 /* Reusable.swift */,
 				04FFAEAD2531B23E00DCBB56 /* UIViewController+hideKeyboardOnTap.swift */,
 				04FFAEB42531B5E000DCBB56 /* DateFormatter+dateFormats.swift */,
+				04F0024D2535FE1A004BEA1A /* Date+dayDifference.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				04DAC0B1253097CD0069684C /* DaySelectorView.swift in Sources */,
 				04CDE272253098F1002A99C0 /* Reusable.swift in Sources */,
 				04CDE27A25309F7D002A99C0 /* DayCellModel.swift in Sources */,
+				04F0024E2535FE1A004BEA1A /* Date+dayDifference.swift in Sources */,
 				04FFAEB82531B6FF00DCBB56 /* BigDatePickerView.swift in Sources */,
 				0422F73C25347C2A000A8E96 /* GoalViewModel.swift in Sources */,
 				04DAC0A72530942D0069684C /* UIView+constraints.swift in Sources */,

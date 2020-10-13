@@ -11,6 +11,7 @@ final class UserSettings {
     
     enum UserSettingsKey: String {
         case goal
+        case goalCreationDate
         case goalDeadline
         case calendarNotificationsEnabled
         case dailyNotificationsEnabled
@@ -37,6 +38,15 @@ final class UserSettings {
         }
         set {
             userDefaults.set(newValue, forKey: .goalDeadline)
+        }
+    }
+    
+    var goalCreationDate: Date? {
+        get {
+            return userDefaults.value(forKey: .goalCreationDate) as? Date
+        }
+        set {
+            userDefaults.set(newValue, forKey: .goalCreationDate)
         }
     }
     

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol DayInfoViewDelegate: class {
+    func performSegueToAddDayNote()
+}
+
 class GoalViewController: UIViewController {
 
     lazy var titleView: BottomBorderedView = {
@@ -36,13 +40,17 @@ class GoalViewController: UIViewController {
     lazy var dayInfoView: DayInfoView = {
         let view = DayInfoView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
         return view
     }()
+    
+    private let viewModel = GoalViewModel(provider: AppServices.default)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         addSubviews()
+        dayInfoView.setup(with: viewModel.currentDay)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,4 +78,11 @@ class GoalViewController: UIViewController {
                                rightAnchor: view.rightAnchor, constant: 0)
     }
     
+}
+
+extension GoalViewController: DayInfoViewDelegate {
+    func performSegueToAddDayNote() {
+        let controller = AddDayNoteViewController()
+        present(controller, animated: true, completion: nil)
+    }
 }

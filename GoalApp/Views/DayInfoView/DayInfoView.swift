@@ -27,6 +27,12 @@ class DayInfoView: UIView {
         addSubviews()
     }
     
+    weak var delegate: DayInfoViewDelegate? {
+        didSet {
+            dayInfoContentView.delegate = delegate
+        }
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -41,6 +47,10 @@ class DayInfoView: UIView {
                                       leftAnchor: leftAnchor, constant: 0,
                                       bottomAnchor: bottomAnchor, constant: 0,
                                       rightAnchor: rightAnchor, constant: 0)
+    }
+    
+    func setup(with model: Day?) {
+        dayInfoContentView.setup(with: model)
     }
     
 }

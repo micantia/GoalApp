@@ -51,6 +51,7 @@ class DayInfoView: UIView {
     
     func setup(with model: Day?) {
         dayInfoContentView.setup(with: model)
+        dayInfoHeaderView.setup(with: model)
     }
     
 }

@@ -48,4 +48,8 @@ class DayInfoHeaderView: UIView {
         deadlineLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -13).isActive = true
     }
     
+    func setup(with model: Day?) {
+        
+    }
+    
 }

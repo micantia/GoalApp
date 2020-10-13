@@ -51,7 +51,12 @@ class GoalViewController: UIViewController {
         view.backgroundColor = .white
         addSubviews()
         dayInfoView.setup(with: viewModel.currentDay)
-        daySelectorView.setup(dayModels: viewModel.availableDaysNumber, selectedIndex: 0)
+        daySelectorView.setup(dayModels: viewModel.availableDaysNumber,
+                              selectedIndex: viewModel.currentDayNumber)
+        daySelectorView.onDaySelected = { dayNumber in
+            self.dayInfoView.setup(with: self.viewModel.day(for: dayNumber))
+            self.dayInfoView.setupHeader(with: dayNumber)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

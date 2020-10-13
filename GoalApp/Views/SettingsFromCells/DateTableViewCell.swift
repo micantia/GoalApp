@@ -17,7 +17,7 @@ class DateTableViewCell: UITableViewCell {
     
     var selectedDate: Date? {
         didSet {
-            textField.text = DateFormatter.fullDateString(from: selectedDate ?? Date())
+            textField.text = DateFormatter.dateTimeString(from: selectedDate ?? Date())
         }
     }
     

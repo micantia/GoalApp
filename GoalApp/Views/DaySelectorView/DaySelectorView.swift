@@ -27,6 +27,8 @@ class DaySelectorView: UIView {
         return collectionView
     }()
     
+    var onDaySelected: ((Int) -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
@@ -53,7 +55,9 @@ class DaySelectorView: UIView {
 }
 
 extension DaySelectorView: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        onDaySelected?(dayModels[indexPath.row].dayNumber)
+    }
 }
 
 extension DaySelectorView: UICollectionViewDataSource {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040CA297253735E60075DB81 /* AddDayNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CA296253735E60075DB81 /* AddDayNoteViewModel.swift */; };
 		0418B36A2531CBD90060DD1E /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3692531CBD90060DD1E /* AppServices.swift */; };
 		0418B36D2531CC7D0060DD1E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B36C2531CC7D0060DD1E /* SettingsViewModel.swift */; };
 		0418B3712531CFAF0060DD1E /* DayInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B3702531CFAF0060DD1E /* DayInfoView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040CA296253735E60075DB81 /* AddDayNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayNoteViewModel.swift; sourceTree = "<group>"; };
 		0418B3692531CBD90060DD1E /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
 		0418B36C2531CC7D0060DD1E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		0418B3702531CFAF0060DD1E /* DayInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				0422F73F2534846B000A8E96 /* AddDayNoteViewController.swift */,
+				040CA296253735E60075DB81 /* AddDayNoteViewModel.swift */,
 			);
 			path = AddDayNote;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				0418B36D2531CC7D0060DD1E /* SettingsViewModel.swift in Sources */,
 				04CDE27E2530A530002A99C0 /* BottomBorderedView.swift in Sources */,
 				04DCFD792530909E00DF091B /* SceneDelegate.swift in Sources */,
+				040CA297253735E60075DB81 /* AddDayNoteViewModel.swift in Sources */,
 				04FFAEAB2531B02C00DCBB56 /* TextViewTableViewCell.swift in Sources */,
 				04FFAEB12531B40F00DCBB56 /* DateTableViewCell.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ extension Date {
     
     func daysDifference(with date: Date) -> Int {
         let calendar = Calendar.current
-        return calendar.dateComponents([.day], from: date, to: self).day ?? 0
+        return (calendar.dateComponents([.day], from: date, to: self).day ?? 0)
     }
     
 }

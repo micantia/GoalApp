@@ -25,16 +25,18 @@ final class GoalViewModel {
     func day(for dayNumber: Int) -> Day? {
         guard let goalCreationDate = provider.userSettings.goalCreationDate else { return nil }
         let startOfGoalCreationDate = Calendar.current.startOfDay(for: goalCreationDate)
-        guard let dateForDayNumber = Calendar.current.date(byAdding: .day, value: dayNumber, to: startOfGoalCreationDate) else { return nil }
+        guard let dateForDayNumber = Calendar.current.date(byAdding: .day, value: dayNumber - 1, to: startOfGoalCreationDate) else { return nil }
+        
         let request: NSFetchRequest<Day> = Day.fetchRequest()
         request.predicate = NSPredicate(format: "date == %@", dateForDayNumber as NSDate)
         let context = provider.coreData.persistanceContainer.viewContext
+        
         return try? context.fetch(request).first
     }
     
     var currentDayNumber: Int {
         guard let goalCreationDate = provider.userSettings.goalCreationDate else { return 1 }
-        return Date().daysDifference(with: goalCreationDate)
+        return Date().daysDifference(with: goalCreationDate) + 1
     }
     
     var availableDaysNumber: [DayCellModel] {
@@ -43,6 +45,13 @@ final class GoalViewModel {
         
         let dayDifference = goalDeadline.daysDifference(with: goalCreationDate) + 1
         
-        return (1...dayDifference).map { DayCellModel(dayNumber: $0, isEnabled: true) }
+        return (1...dayDifference).map { DayCellModel(dayNumber: $0, isEnabled: self.isDayDisabled(at: $0)) }
+    }
+    
+    func isDayDisabled(at number: Int) -> Bool {
+        guard let goalCreationDate = provider.userSettings.goalCreationDate,
+              let date = Calendar.current.date(byAdding: .day, value: number - 1, to: goalCreationDate)
+        else { return false }
+        return date <= Date()
     }
 }

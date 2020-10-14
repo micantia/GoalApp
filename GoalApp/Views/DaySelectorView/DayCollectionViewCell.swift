@@ -41,6 +41,7 @@ class DayCollectionViewCell: UICollectionViewCell, Reusable {
     func setup(with dayModel: DayCellModel) {
         dayLabel.text = dayModel.stringValue
         dayLabel.textColor = dayModel.isEnabled ? .white : .grayDisabled
+        isUserInteractionEnabled = dayModel.isEnabled
     }
     
 }

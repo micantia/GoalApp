@@ -45,7 +45,7 @@ class DaySelectorView: UIView {
     
     func setup(dayModels: [DayCellModel], selectedIndex: Int) {
         self.dayModels = dayModels
-        let selectedIndex = IndexPath(item: selectedIndex, section: 0)
+        let selectedIndex = IndexPath(item: selectedIndex - 1, section: 0)
         collectionView.reloadData()
         DispatchQueue.main.async {
             self.collectionView.selectItem(at: selectedIndex, animated: false, scrollPosition: .right)

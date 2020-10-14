@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol DayInfoViewDelegate: class {
+    func performSegueToAddDayNote()
+}
+
 class DayInfoView: UIView {
 
     lazy var dayInfoHeaderView: DayInfoHeaderView = {
@@ -49,11 +53,8 @@ class DayInfoView: UIView {
                                       rightAnchor: rightAnchor, constant: 0)
     }
     
-    func setup(with model: Day?) {
+    func setup(with model: Day?, dayNumber: Int) {
         dayInfoContentView.setup(with: model)
-    }
-    
-    func setupHeader(with dayNumber: Int) {
         dayInfoHeaderView.setup(dayNumber: dayNumber)
     }
     

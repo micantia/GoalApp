@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol DayInfoViewDelegate: class {
-    func performSegueToAddDayNote()
-}
-
 class GoalViewController: UIViewController {
 
     lazy var titleView: BottomBorderedView = {
@@ -50,12 +46,11 @@ class GoalViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         addSubviews()
-        dayInfoView.setup(with: viewModel.currentDay)
+        dayInfoView.setup(with: viewModel.currentDay, dayNumber: viewModel.currentDayNumber)
         daySelectorView.setup(dayModels: viewModel.availableDaysNumber,
                               selectedIndex: viewModel.currentDayNumber)
         daySelectorView.onDaySelected = { dayNumber in
-            self.dayInfoView.setup(with: self.viewModel.day(for: dayNumber))
-            self.dayInfoView.setupHeader(with: dayNumber)
+            self.dayInfoView.setup(with: self.viewModel.day(for: dayNumber), dayNumber: dayNumber)
         }
     }
     
@@ -88,6 +83,14 @@ class GoalViewController: UIViewController {
 extension GoalViewController: DayInfoViewDelegate {
     func performSegueToAddDayNote() {
         let controller = AddDayNoteViewController()
-        present(controller, animated: true, completion: nil)
+        controller.delegate = self
+        let embededController = UINavigationController(rootViewController: controller)
+        present(embededController, animated: true, completion: nil)
+    }
+}
+
+extension GoalViewController: AddDayNoteControllerDelegate {
+    func onNewDayNoteAdded(_ day: Day) {
+        dayInfoView.dayInfoContentView.setup(with: day)
     }
 }

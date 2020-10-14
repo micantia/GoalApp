@@ -9,6 +9,8 @@ import UIKit
 
 class DayInfoHeaderView: UIView {
 
+    let provider: UserSettingsProvider = AppServices.default
+    
     lazy var dayLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +52,15 @@ class DayInfoHeaderView: UIView {
     
     func setup(dayNumber: Int) {
         dayLabel.text = "Day \(dayNumber)"
+        
+        guard let goalDeadline = provider.userSettings.goalDeadline,
+              let date = Calendar.current.date(byAdding: .day, value: dayNumber - 1, to: Date()) else { return }
+        
+        let daysDifference = goalDeadline.daysDifference(with: date)
+        let dateString = DateFormatter.dateString(from: date)
+        
+        deadlineLabel.text = dateString + "\n\(daysDifference) days until deadline"
+        
     }
     
 }

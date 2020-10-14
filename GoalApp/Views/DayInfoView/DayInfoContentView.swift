@@ -92,6 +92,7 @@ class DayInfoContentView: UIView {
             return
         }
         goalTextView.text = model.note
+        hideNeededSubviews(false)
     }
 
     private func hideNeededSubviews(_ shouldHide: Bool) {

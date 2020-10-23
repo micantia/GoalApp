@@ -14,4 +14,9 @@ extension Date {
         return (calendar.dateComponents([.day], from: date, to: self).day ?? 0)
     }
     
+    func advancedByDays(value: Int) -> Date {
+        let calendar = Calendar.current
+        return calendar.date(byAdding: .day, value: value, to: self) ?? self
+    }
+    
 }

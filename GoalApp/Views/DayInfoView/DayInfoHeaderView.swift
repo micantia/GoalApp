@@ -54,7 +54,8 @@ class DayInfoHeaderView: UIView {
         dayLabel.text = "Day \(dayNumber)"
         
         guard let goalDeadline = provider.userSettings.goalDeadline,
-              let date = Calendar.current.date(byAdding: .day, value: dayNumber - 1, to: Date()) else { return }
+              let goalCreationDate = provider.userSettings.goalCreationDate else { return }
+        let date = goalCreationDate.advancedByDays(value: dayNumber - 1)
         
         let daysDifference = goalDeadline.daysDifference(with: date)
         let dateString = DateFormatter.dateString(from: date)

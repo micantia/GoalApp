@@ -39,6 +39,7 @@ class AddDayNoteViewController: UIViewController {
     
     let viewModel = AddDayNoteViewModel(provider: AppServices.default)
     weak var delegate: AddDayNoteControllerDelegate?
+    var dateAdding: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +55,9 @@ class AddDayNoteViewController: UIViewController {
     }
     
     @objc private func saveDayNote() {
-        guard let text = textView.text else { return }
-        viewModel.saveDayNote(note: text, date: Date()) { (day) in
+        guard let text = textView.text,
+              let date = dateAdding else { return }
+        viewModel.saveDayNote(note: text, date: date) { (day) in
             self.delegate?.onNewDayNoteAdded(day)
             self.cancelVC()
         }

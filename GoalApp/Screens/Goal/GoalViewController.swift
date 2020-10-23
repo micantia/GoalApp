@@ -84,6 +84,7 @@ extension GoalViewController: DayInfoViewDelegate {
     func performSegueToAddDayNote() {
         let controller = AddDayNoteViewController()
         controller.delegate = self
+        controller.dateAdding = viewModel.goalCreationDate?.advancedByDays(value: (daySelectorView.selectedDayNumber ?? 1) - 1)
         let embededController = UINavigationController(rootViewController: controller)
         present(embededController, animated: true, completion: nil)
     }
